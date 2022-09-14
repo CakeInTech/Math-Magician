@@ -1,6 +1,11 @@
+$font-stack: helvetica, sans-serif;
+$primary-color: #333;
+$secondary-color: rgb(245, 145, 62);
+$gradient-background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+
 body {
-  font: 100% helvetica, sans-serif;
-  color: #333;
+  font: 100% $font-stack;
+  color: $primary-color;
 }
 
 * {
@@ -20,16 +25,16 @@ body {
   border-radius: 0;
   box-sizing: border-box;
   width: 100%;
-  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  background: $gradient-background;
   height: 100vh;
-}
 
-.calcCenter .mainCalculator {
-  margin: 100px auto;
-  padding: 0;
-  border-radius: 0;
-  box-sizing: border-box;
-  width: 50%;
+  .mainCalculator {
+    margin: 100px auto;
+    padding: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 50%;
+  }
 }
 
 .one,
@@ -46,7 +51,7 @@ body {
   color: black;
 }
 
-input[type=button] {
+input[type="button"] {
   border: 1px solid #222;
   padding: 10px 20px;
   color: black;
@@ -54,10 +59,10 @@ input[type=button] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}
 
-input[type=button] input[type=button]:active {
-  background: #ccc;
+  input[type="button"]:active {
+    background: #ccc;
+  }
 }
 
 .screen-row input {
@@ -72,5 +77,5 @@ input[type=button] input[type=button]:active {
 }
 
 .zero {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
 }
