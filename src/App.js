@@ -1,6 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line import/no-named-as-default
-import Calculator from '../src/Components/Calculator';
+import Calculator from './Components/Calculator';
 import './index.css';
 
 class App extends React.PureComponent {
