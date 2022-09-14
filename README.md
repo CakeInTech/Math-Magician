@@ -24,7 +24,6 @@
 - [Twitter](https://twitter.com/MohamedCK0)
 - [LinkedIn](https://www.linkedin.com/in/mohamed-abdulhakim-2868521b6/)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -44,4 +43,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
