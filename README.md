@@ -16,8 +16,6 @@
 [Live Demo Link](https://livedemo.com) incomming
 
 
-## Authors
-
 👤 **Mohamed Abdulhakim**
 
 > Software Developer | Currently Learning: Javascript, React, Redux, Ruby, Rails. | Good with Frontend.
@@ -25,7 +23,6 @@
 - [GitHub](https://github.com/MohamedCK)
 - [Twitter](https://twitter.com/MohamedCK0)
 - [LinkedIn](https://www.linkedin.com/in/mohamed-abdulhakim-2868521b6/)
-
 
 ## 🤝 Contributing
 
@@ -46,4 +43,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
