@@ -1,4 +1,82 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% helvetica, sans-serif;
   color: #333;
-}/*# sourceMappingURL=index.css.map */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.calcCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 50px;
+  border-radius: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  height: 100vh;
+}
+
+.calcCenter .calcCenter h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.mainCalculato {
+  padding: 0;
+  border-radius: 0;
+  width: 70%;
+  margin-left: auto;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.orange {
+  background: rgb(245, 145, 62);
+  color: black;
+}
+
+input[type=button] {
+  border: 1px solid #222;
+  padding: 10px 20px;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: 100px;
+}
+
+input[type=button]:active {
+  background: #333;
+}
+
+.screen-row {
+  width: 100%;
+  border: 1px solid #222;
+  border: 0;
+  color: #fff;
+  text-align: right;
+}
+
+.screen-row input {
+  padding: 10px 20px;
+}
+
+.zero {
+  grid-column: 1/span 2;
+  width: 80px;
+}
