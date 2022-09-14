@@ -23,6 +23,7 @@ body {
   background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
   height: 100vh;
 }
+
 .calcCenter .mainCalculator {
   margin: 100px auto;
   padding: 0;
@@ -54,6 +55,7 @@ input[type=button] {
   display: inline-block;
   font-size: 16px;
 }
+
 input[type=button] input[type=button]:active {
   background: #ccc;
 }
@@ -72,5 +74,3 @@ input[type=button] input[type=button]:active {
 .zero {
   grid-column: 1/span 2;
 }
-
-/*# sourceMappingURL=index.css.map */

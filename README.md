@@ -16,8 +16,6 @@
 [Live Demo Link](https://livedemo.com) incomming
 
 
-## Authors
-
 👤 **Mohamed Abdulhakim**
 
 > Software Developer | Currently Learning: Javascript, React, Redux, Ruby, Rails. | Good with Frontend.
