@@ -60,12 +60,13 @@ input[type="button"] {
   display: inline-block;
   font-size: 16px;
 
-  input[type="button"]:active {
-    background: #ccc;
-  }
 }
 
-.screen-row input {
+input[type="button"]:active {
+  background: $primary-color;
+}
+
+.screen-row {
   width: 100%;
   height: 60px;
   background: #858694;
