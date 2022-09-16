@@ -19,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 0 auto;
   padding: 0;
   border-radius: 0;
@@ -59,13 +58,14 @@ input[type="button"] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
-  input[type="button"]:active {
-    background: #ccc;
-  }
 }
 
-.screen-row input {
+input[type="button"]:active {
+  background: $primary-color;
+  color: white;
+}
+
+.screen-row {
   width: 100%;
   height: 60px;
   background: #858694;
