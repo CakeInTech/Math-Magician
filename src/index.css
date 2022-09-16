@@ -57,6 +57,7 @@ input[type=button] {
 
 input[type=button]:active {
   background: #333;
+  color: white;
 }
 
 .screen-row {
