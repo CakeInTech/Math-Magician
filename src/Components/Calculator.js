@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import Calculate from '../logic/Calculate';
+import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
@@ -15,7 +15,7 @@ class Calculator extends React.Component {
 
    handleClick = (events) => {
      const { value } = events.target;
-     const answer = Calculate(this.state, value);
+     const answer = calculate(this.state, value);
      this.setState(answer);
    }
 
@@ -32,21 +32,20 @@ class Calculator extends React.Component {
         <div className="mainCalculator">
           <div className="screen-row" onChange={this.showAnswer}>
             {total}
-            {next}
             {operation}
+            {next}
           </div>
           <div className="button-row one">
             <input type="button" value="AC" onClick={this.handleClick} />
             <input type="button" value="+/-" onClick={this.handleClick} />
             <input type="button" value="%" onClick={this.handleClick} />
-            <input type="button" value="/" className="orange" onClick={this.handleClick} />
+            <input type="button" value="÷" className="orange" onClick={this.handleClick} />
           </div>
           <div className="button-row two">
             <input type="button" value="7" onClick={this.handleClick} />
             <input type="button" value="8" onClick={this.handleClick} />
-            5
             <input type="button" value="9" onClick={this.handleClick} />
-            <input type="button" value="*" onClick={this.handleClick} className="orange" />
+            <input type="button" value="x" onClick={this.handleClick} className="orange" />
           </div>
           <div className="button-row three">
             <input type="button" value="4" onClick={this.handleClick} />
