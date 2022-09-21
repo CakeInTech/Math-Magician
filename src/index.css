@@ -1,6 +1,6 @@
 body {
   font: 100% helvetica, sans-serif;
-  color: #333;
+  color: #aac4ff;
 }
 
 * {
@@ -12,25 +12,96 @@ body {
 
 .calcCenter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 50px 20px;
   border-radius: 0;
   box-sizing: border-box;
   width: 100%;
-  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
-  height: 100vh;
+  background: #eef1ff;
+  height: 90vh;
 }
-
 .calcCenter .mainCalculator {
-  margin: 100px auto;
-  padding: 0;
-  border-radius: 0;
+  margin-left: 50px;
+  padding: 16px;
+  border-radius: 24px;
   box-sizing: border-box;
-  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #aac4ff;
 }
 
+.calcCenter p {
+  font-family: "Dangrek", cursive;
+  font-size: 1.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 50%;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  0% {
+    color: red;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    color: green;
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    color: red;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes example {
+  0% {
+    color: red;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    color: green;
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    color: red;
+    left: 0;
+    top: 0;
+  }
+}
 .one,
 .two,
 .three,
@@ -38,6 +109,7 @@ body {
 .five {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .orange {
@@ -46,17 +118,19 @@ body {
 }
 
 input[type=button] {
-  border: 1px solid #222;
-  padding: 10px 20px;
-  color: black;
+  border-radius: 100%;
+  padding: 40px 40px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 10px 0;
 }
 
 input[type=button]:active {
-  background: #333;
+  background: #aac4ff;
   color: white;
 }
 
@@ -67,10 +141,7 @@ input[type=button]:active {
   border: 1px solid #222;
   border: 0;
   color: #fff;
-  padding: 10px;
+  padding: 16px 10px;
   text-align: right;
-}
-
-.zero {
-  grid-column: 1/span 2;
-}
+  border-radius: 16px;
+}/*# sourceMappingURL=index.css.map */
