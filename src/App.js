@@ -4,7 +4,6 @@ import Navbar from './pages/Navbar';
 import Home from './pages/Home';
 import Quote from './pages/Quotes';
 import Calculator from './Components/Calculator';
-import './index.css';
 
 class App extends React.PureComponent {
   render() {
