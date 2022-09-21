@@ -24,6 +24,7 @@ const Calculator = () => {
   const { total, next, operation } = state;
   return (
     <div className="calcCenter">
+      <p>Let&apos;s do some maths</p>
       <div className="mainCalculator">
         <div className="screen-row" onChange={showAnswer}>
           {total}

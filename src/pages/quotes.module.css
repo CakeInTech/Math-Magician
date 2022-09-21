@@ -1,0 +1,25 @@
+.quotes_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef1ff;
+  height: 90vh;
+}
+
+.quotes_container p {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 800;
+  font-family: 'Dangrek', cursive;
+  animation-name: etColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes etColor {
+  0% { color: #937dc2; }
+  50% { color: #c689c6; }
+  100% { color: #ffabe1; }
+}
