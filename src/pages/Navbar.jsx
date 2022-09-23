@@ -4,13 +4,13 @@ import css from './Navbar.module.css';
 const links = [
   {
     id: 1,
-    path: '/home', 
+    path: '/home',
     text: 'home',
     data_testid: 'home',
-  }, 
+  },
   {
     id: 2,
-    path: '/calculator', 
+    path: '/calculator',
     text: 'Calculator',
     data_testid: 'calculator',
   },
@@ -29,8 +29,12 @@ const Navbar = () => (
     <ul className={css.items}>
         {links.map((links) => (
             <li key={links.id}>
-                {""}
-              <a to={links.path} className={css.Nav_link} data_testid={links.data_testid}>
+                {" "}
+
+              <a 
+              to={links.path} 
+              className={css.Nav_link} 
+              data_testid={links.data_testid} >
                   {links.text}
               </a>
             </li>
