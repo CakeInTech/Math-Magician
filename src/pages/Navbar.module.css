@@ -38,6 +38,10 @@
   list-style: none;
 }
 
+.Active {
+  color: red;
+}
+
 .Nav_link:hover {
   color: #d2daff;
 }

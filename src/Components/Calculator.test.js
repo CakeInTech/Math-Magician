@@ -1,0 +1,145 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Calculator from './Calculator';
+
+it("renders and test's agianst the dom", () => {
+  const linker = renderer.create(<Calculator />).toJSON();
+  expect(linker).toMatchInlineSnapshot(`
+<div
+  className="calcCenter"
+>
+  <p>
+    Let's do some maths
+  </p>
+  <div
+    className="mainCalculator"
+  >
+    <div
+      className="screen-row"
+      onChange={[Function]}
+    />
+    <div
+      className="button-row one"
+    >
+      <input
+        onClick={[Function]}
+        type="button"
+        value="AC"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="+/-"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="%"
+      />
+      <input
+        className="orange"
+        onClick={[Function]}
+        type="button"
+        value="÷"
+      />
+    </div>
+    <div
+      className="button-row two"
+    >
+      <input
+        onClick={[Function]}
+        type="button"
+        value="7"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="8"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="9"
+      />
+      <input
+        className="orange"
+        onClick={[Function]}
+        type="button"
+        value="x"
+      />
+    </div>
+    <div
+      className="button-row three"
+    >
+      <input
+        onClick={[Function]}
+        type="button"
+        value="4"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="5"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="6"
+      />
+      <input
+        className="orange"
+        onClick={[Function]}
+        type="button"
+        value="-"
+      />
+    </div>
+    <div
+      className="button-row four"
+    >
+      <input
+        onClick={[Function]}
+        type="button"
+        value="1"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="2"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="3"
+      />
+      <input
+        className="orange"
+        onClick={[Function]}
+        type="button"
+        value="+"
+      />
+    </div>
+    <div
+      className="button-row five"
+    >
+      <input
+        className="zero"
+        onClick={[Function]}
+        type="button"
+        value="0"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="."
+      />
+      <input
+        className="orange"
+        onClick={[Function]}
+        type="button"
+        value="="
+      />
+    </div>
+  </div>
+</div>
+`);
+});
