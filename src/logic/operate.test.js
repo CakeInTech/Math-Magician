@@ -10,4 +10,4 @@ test('should take two numbers and an operation and retrun the result', () => {
   expect(operate(2, 0, '÷')).toBe("Can't divide by 0.");
   expect(operate(2, -1, '÷')).toBe('-2');
   expect(operate(2, 0, '%')).toBe("Can't find modulo as can't divide by 0.");
-}); 
+});
